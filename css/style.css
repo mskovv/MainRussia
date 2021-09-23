@@ -29,17 +29,6 @@ a:visited {
      object-fit: cover;
 }
 
-.lineika {
-  top: 0;
-  left: 50%;
-  position: absolute;
-  z-index: 100;
-  width: 20px;
-  height: 211px;
-  border: 1px solid white;
-  background-color: white;
-}
-
 header .container {
   height: 225px;
 }
@@ -199,6 +188,14 @@ header .container .row__links .links__list .links__list_li ul li a {
   height: 100%;
   top: 0;
   left: 0;
+  opacity: 0.6;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.bloggers .row .bloggers__frame .bloggers__frame_window .bloggers__frame_window_item .window_img:hover {
+  opacity: 1;
+  z-index: 5;
 }
 
 .bloggers .row .bloggers__frame .bloggers__frame_window .bloggers__frame_window_item .blogger__about {
@@ -210,13 +207,14 @@ header .container .row__links .links__list .links__list_li ul li a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-left: 12px;
+  padding: 0 0 20px 12px;
 }
 
 .bloggers .row .bloggers__frame .bloggers__frame_window .bloggers__frame_window_item .blogger__about .window__title {
   font-size: 30px;
   font-weight: 700;
   line-height: 37px;
+  padding-bottom: 10px;
 }
 
 .bloggers .row .bloggers__frame .bloggers__frame_window .bloggers__frame_window_item .blogger__about .window__subtitle {
@@ -227,11 +225,24 @@ header .container .row__links .links__list .links__list_li ul li a {
   -webkit-column-gap: 20px;
           column-gap: 20px;
   row-gap: 10px;
+}
+
+.bloggers .row .bloggers__frame .bloggers__frame_window .bloggers__frame_window_item .blogger__about .window__subtitle p {
+  line-height: 24px;
   font-size: 20px;
   font-weight: 500;
 }
 
-.bloggers .row .bloggers__frame .bloggers__frame_window .bloggers__frame_window_item .blogger__about .window__subtitle .img__text img {
-  float: left;
+.bloggers .row .bloggers__frame .bloggers__frame_window .bloggers__frame_window_item .blogger__about .window__subtitle .subtitle__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bloggers .row .bloggers__frame .bloggers__frame_window .bloggers__frame_window_item .blogger__about .window__subtitle .subtitle__text img {
+  margin-right: 8px;
 }
 /*# sourceMappingURL=style.css.map */
