@@ -377,4 +377,101 @@ footer .row .footer__link {
 footer .row .footer__link a:not(:last-child) {
   margin-right: 30px;
 }
+
+.profile .container {
+  height: 572px;
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid #EFF3F5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-radius: 5px;
+}
+
+.profile .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.profile .container .row .profile__info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profile .container .row .profile__info .profile__info_container {
+  width: 808px;
+}
+
+.profile .container .row .profile__info .profile__info_container .profile__title {
+  height: 122px;
+  border-bottom: 1px solid #EFF3F5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile .container .row .profile__info .profile__info_container .profile__title .profile__title_text h1 {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 61px;
+}
+
+.profile .container .row .profile__info .profile__info_container .profile__info_social {
+  border-bottom: 1px solid #EFF3F5;
+  height: 218px;
+}
+
+.profile .container .row .profile__info .profile__info_container .profile__info_social .profile__social {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+  row-gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 64%;
+  height: 100%;
+}
+
+.profile .container .row .profile__info .profile__info_container .profile__info_social .profile__social p {
+  line-height: 37px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.profile .container .row .profile__info .profile__info_container .profile__info_social .profile__social span {
+  font-size: 16px;
+  letter-spacing: 5%;
+  line-height: 24 [x];
+}
+
+.profile .container .row .profile__info .profile__info_container .profile__info_social .profile__social .subtitle__text {
+  height: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile .container .row .profile__info .profile__info_container .profile__info_social .profile__social .subtitle__text img {
+  margin-right: 20px;
+}
 /*# sourceMappingURL=style.css.map */
