@@ -11,7 +11,7 @@ a:visited {
   cursor: url("../img/cursor/Group85.png") 30 30, pointer;
 }
 
-.bloggers__sorting_item {
+select .bloggers__sorting_selector {
   cursor: url("../img/cursor/Group85.png") 30 30, auto;
 }
 
@@ -176,19 +176,14 @@ header .container .row__links .links__list .links__list_li ul li a {
 }
 
 .bloggers .container .row .bloggers__sorting .bloggers__sorting_item .bloggers__sorting_item_list .bloggers__sorting_selector {
+  display: block;
   background: none;
   color: #EFF3F5;
 }
 
 .bloggers .container .row .bloggers__sorting .bloggers__sorting_item .bloggers__sorting_item_list .bloggers__sorting_selector option {
-  background: rgba(110, 16, 94, 0.5);
-  border: 0.5px solid #000000;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-box-shadow: inset 0px 0px 5px 5px rgba(255, 255, 255, 0.25);
-          box-shadow: inset 0px 0px 5px 5px rgba(255, 255, 255, 0.25);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  background: #6e105e;
+  border: 10px solid red;
   border-radius: 12px;
   font-size: 16px;
   font-weight: 400;
