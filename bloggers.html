@@ -17,8 +17,7 @@
 </head>
 
 <body>
-	<div class="lineika">
-	</div>
+
 
 	<header>
 		<div class="container">
@@ -33,10 +32,10 @@
 					<div class="nav__list">
 						<div class="nav__list_li">
 							<ul>
-								<li> <a href="#">Блогеры</a> </li>
-								<li> <a href="#">Кейсы</a> </li>
-								<li> <a href="#">exit agency</a> </li>
-								<li> <a href="#">Контакты</a> </li>
+								<li> <a href="#bloger">Блогеры</a> </li>
+								<li> <a href="#kases">Кейсы</a> </li>
+								<li> <a href="#contact">exit agency</a> </li>
+								<li> <a href="#contact">Контакты</a> </li>
 							</ul>
 						</div>
 					</div>
@@ -55,7 +54,7 @@
 						<ul>
 							<li> <a href="#">Главная</a> </li>
 							<span>/</span>
-							<li> <a href="#">Блогеры</a> </li>
+							<li class="activ"> <a href="bloggers.html">Блогеры</a> </li>
 						</ul>
 					</div>
 				</div>
@@ -64,7 +63,7 @@
 	</header>
 
 
-	<div class="bloggers">
+	<div class="bloggers" id="bloger">
 		<div class="container">
 			<div class="row">
 				<div class="bloggers__title">
@@ -317,20 +316,56 @@
 							</div>
 						</div>
 					</div>
-
-					
 				</div>
 			</div>
 		</div>
 	</div>
 
 
-	<div class="loaders">
+	<div class="loaders" id="kases">
+		<div class="line_loader">
+			<hr>
+			<p>Подгружаем...</p>
+			<hr>
+		</div>
 	</div>
 
+
 	<footer>
-		footer
+		<div class="container">
+			<div class="row">
+				<div class="footer__img">
+					<img src="img/footer/footer.png" alt="">
+				</div>
+				<div class="footer__contacts" id="contact">
+					<div class="footer__contacts_contact _info">
+						<div class="footer__contacts_contact_text info_text">
+							<p>Cвязаться с нами</p>
+						</div>
+					</div>
+					<div class="footer__contacts_email _info">
+						<div class="footer__contacts_email_text info_text">
+							<p>reklama@wildjam.ru</p>
+						</div>
+					</div>
+					<div class="footer__contacts_adress _info">
+						<div class="footer__contacts_adress_text info_text">
+							<p>ул. Сущевская, д. 27, стр. 2</p>
+						</div>
+					</div>
+					<div class="footer__contacts_tel _info">
+						<div class="footer__contacts_tel_text info_text">
+							<p>+7 (499) 393-39-62</p>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
 	</footer>
+
+	<script src="js/coloringPage.js"></script>
 </body>
 
 </html>
