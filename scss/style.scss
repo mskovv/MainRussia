@@ -2,14 +2,21 @@ body {
 	background-color: #6E105E;
 	color: #EFF3F5;
 	font-family: 'Montserrat', sans-serif;
+	cursor: url("../img/cursor/cursor.png"), default;
+	
 }
 
 
 a,
 a:visited {
 	color: #EFF3F5;
-	;
+	cursor: url("../img/cursor/Group85.png")30 30, pointer;
 }
+
+.bloggers__sorting_item{
+	cursor: url("../img/cursor/Group85.png")30 30, auto;
+}
+
 
 .container {
 	max-width: 1304px;
@@ -124,7 +131,7 @@ header {
 						}
 
 						li {
-							
+
 
 							&:hover {
 
@@ -324,16 +331,22 @@ footer {
 
 	.row {
 		display: flex;
-		align-items: center;
+		// align-items: center;
+		flex-wrap: wrap;
+		// justify-content: center;
 
 		.footer__img {
 			margin-right: 88px;
 		}
 
+
 		.footer__contacts {
 			display: flex;
 			width: 1015px;
-			align-items: center;
+			height: 60%;
+			flex-wrap: wrap;
+			align-items: flex-end;
+
 
 			._info {
 				&:not(:last-child) {
@@ -350,5 +363,14 @@ footer {
 				}
 			}
 		}
+
+		.footer__link {
+			display: flex;
+			justify-content: center;
+			height: 40%;
+			align-items: center;
+			width: 72%;
+		}
+
 	}
 }

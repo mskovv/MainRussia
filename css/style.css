@@ -2,11 +2,17 @@ body {
   background-color: #6E105E;
   color: #EFF3F5;
   font-family: 'Montserrat', sans-serif;
+  cursor: url("../img/cursor/cursor.png"), default;
 }
 
 a,
 a:visited {
   color: #EFF3F5;
+  cursor: url("../img/cursor/Group85.png") 30 30, pointer;
+}
+
+.bloggers__sorting_item {
+  cursor: url("../img/cursor/Group85.png") 30 30, auto;
 }
 
 .container {
@@ -328,9 +334,8 @@ footer .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 footer .row .footer__img {
@@ -342,9 +347,12 @@ footer .row .footer__contacts {
   display: -ms-flexbox;
   display: flex;
   width: 1015px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  height: 60%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 footer .row .footer__contacts ._info:not(:last-child) {
@@ -355,5 +363,19 @@ footer .row .footer__contacts ._info .info_text p {
   font-size: 20px;
   font-weight: 600;
   line-height: 24px;
+}
+
+footer .row .footer__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 40%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 72%;
 }
 /*# sourceMappingURL=style.css.map */
