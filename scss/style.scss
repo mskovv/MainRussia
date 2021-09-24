@@ -370,6 +370,12 @@ footer {
 			height: 40%;
 			align-items: center;
 			width: 72%;
+
+			a{
+				&:not(:last-child){
+				margin-right: 30px;
+				}
+			}
 		}
 
 	}

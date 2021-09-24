@@ -378,4 +378,8 @@ footer .row .footer__link {
           align-items: center;
   width: 72%;
 }
+
+footer .row .footer__link a:not(:last-child) {
+  margin-right: 30px;
+}
 /*# sourceMappingURL=style.css.map */
