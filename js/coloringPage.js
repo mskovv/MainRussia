@@ -1,7 +1,4 @@
-function colorings(){
-    let url = window.location.href;
-
-    (.)
-}
-
-colorings();
+$( document).ready(function() {
+	let bol = $("body").hasClass("header");
+	console.log(bol);
+});

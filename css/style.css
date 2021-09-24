@@ -113,18 +113,18 @@ header .container .row__links .links__list .links__list_li ul {
   display: flex;
 }
 
+header .container .row__links .links__list .links__list_li ul .activ a {
+  background-color: #EFF3F5;
+  color: #6E105E;
+  border-radius: 14px;
+  padding: 2px 5px;
+}
+
 header .container .row__links .links__list .links__list_li ul span {
   margin: 0 5px;
   font-size: 14px;
   font-weight: 300;
   line-height: 22px;
-}
-
-header .container .row__links .links__list .links__list_li ul li .activ a {
-  background-color: #EFF3F5;
-  color: #6E105E;
-  border-radius: 14px;
-  padding: 2px 5px;
 }
 
 header .container .row__links .links__list .links__list_li ul li:hover a {

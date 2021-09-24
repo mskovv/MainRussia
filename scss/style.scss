@@ -107,6 +107,15 @@ header {
 					ul {
 						display: flex;
 
+						.activ {
+							a {
+								background-color: #EFF3F5;
+								color: #6E105E;
+								border-radius: 14px;
+								padding: 2px 5px;
+							}
+						}
+
 						span {
 							margin: 0 5px;
 							font-size: 14px;
@@ -115,14 +124,7 @@ header {
 						}
 
 						li {
-							.activ {
-								a {
-									background-color: #EFF3F5;
-									color: #6E105E;
-									border-radius: 14px;
-									padding: 2px 5px;
-								}
-							}
+							
 
 							&:hover {
 
