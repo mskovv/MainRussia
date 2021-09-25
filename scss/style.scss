@@ -49,12 +49,13 @@ select.bloggers__sorting_selector {
 	}
 }
 
-._block__title{
+._block__title {
 	display: flex;
 	justify-content: center;
 	height: 191px;
 	align-items: center;
 }
+
 
 
 // !-----Страница блогеров------------------------------//
@@ -544,7 +545,7 @@ footer {
 
 	.container {
 		.row {
-			
+
 			.videos__frame {
 				height: 464px;
 
@@ -592,9 +593,106 @@ footer {
 
 // !-----Others Bloggers-----------------------//
 .others {
+	height: 603px;
+
 	.container {
 		.row {
-			
+
+			.others-bloggers__container {
+				.others-bloggers__block {
+					height: 311px;
+					overflow: hidden;
+					// overflow-x:scroll;
+					// overflow-y: visible;
+
+					.others-bloggers__block_frame {
+						display: grid;
+						grid-template-columns: repeat(4, 1fr);
+						column-gap: 20px;
+						row-gap: 50px;
+
+						.others__frame_window {
+							height: 311px;
+							position: relative;
+
+							.others__frame_window_item {
+								height: 311px;
+								width: 100%;
+								display: flex;
+								align-items: end;
+
+								&:hover {
+									.window_img {
+										opacity: 1;
+										z-index: 5;
+									}
+								}
+
+								.window_img {
+									position: absolute;
+									width: 100%;
+									height: 100%;
+									top: 0;
+									left: 0;
+
+									opacity: 0.6;
+									transition: all 0.5s;
+								}
+
+
+
+								.blogger__about {
+									z-index: 3;
+									display: flex;
+									flex-direction: column;
+									padding: 0 0 20px 12px;
+
+
+									.window__title {
+										font-size: 30px;
+										font-weight: 700;
+										line-height: 37px;
+										padding-bottom: 10px;
+									}
+
+									.window__subtitle {
+										display: grid;
+										grid-template-columns: repeat(2, 1fr);
+										column-gap: 20px;
+										row-gap: 10px;
+
+
+										p {
+											line-height: 24px;
+											font-size: 20px;
+											font-weight: 500;
+										}
+
+										.subtitle__text {
+											display: flex;
+											align-items: center;
+
+											img {
+												margin-right: 8px;
+											}
+										}
+									}
+
+
+
+
+
+
+								}
+							}
+						}
+					}
+				}
+
+				.others-bloggers__slider{
+					height: 100px;
+				}
+			}
 		}
 	}
 }
