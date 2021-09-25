@@ -7,4 +7,6 @@ $(document).ready(function () {
 			$(this).parent().addClass("activ");
 		}
 	});
+
 });
+

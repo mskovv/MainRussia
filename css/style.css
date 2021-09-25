@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background-color: #6E105E;
   color: #EFF3F5;
@@ -625,6 +626,7 @@ footer .row .footer__link a:not(:last-child) {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
+  min-width: 0;
 }
 
 .others .container .row .others-bloggers__container .others-bloggers__block .others-bloggers__block_frame .others__frame_window .others__frame_window_item:hover .window_img {
@@ -693,5 +695,16 @@ footer .row .footer__link a:not(:last-child) {
 
 .others .container .row .others-bloggers__container .others-bloggers__slider {
   height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
+/* Слайдер */
 /*# sourceMappingURL=style.css.map */

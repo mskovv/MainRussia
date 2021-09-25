@@ -458,11 +458,10 @@ footer {
 							column-gap: 50px;
 							row-gap: 30px;
 
+
 							align-items: center;
 							width: 64%;
 							height: 100%;
-
-
 
 							p {
 								line-height: 37px;
@@ -602,8 +601,6 @@ footer {
 				.others-bloggers__block {
 					height: 311px;
 					overflow: hidden;
-					// overflow-x:scroll;
-					// overflow-y: visible;
 
 					.others-bloggers__block_frame {
 						display: grid;
@@ -620,6 +617,7 @@ footer {
 								width: 100%;
 								display: flex;
 								align-items: end;
+								min-width: 0;
 
 								&:hover {
 									.window_img {
@@ -689,10 +687,17 @@ footer {
 					}
 				}
 
-				.others-bloggers__slider{
+				.others-bloggers__slider {
 					height: 100px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
 				}
 			}
+
 		}
 	}
 }
+
+
+//!--------------SLIDER--------------
