@@ -11,8 +11,12 @@ a:visited {
   cursor: url("../img/cursor/Group85.png") 30 30, pointer;
 }
 
-select .bloggers__sorting_selector {
+select.bloggers__sorting_selector {
   cursor: url("../img/cursor/Group85.png") 30 30, auto;
+}
+
+select.bloggers__sorting_selector option {
+  cursor: url("../img/cursor/cursor.png"), default;
 }
 
 .container {
@@ -33,6 +37,25 @@ select .bloggers__sorting_selector {
   left: 0;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+._title__text h2 {
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 61px;
+}
+
+._block__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 191px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header {
@@ -521,5 +544,51 @@ footer .row .footer__link a:not(:last-child) {
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 5%;
+}
+
+.videos {
+  height: 655px;
+}
+
+.videos .container .row .videos__frame {
+  height: 464px;
+}
+
+.videos .container .row .videos__frame .videos__frame__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  row-gap: 30px;
+  -webkit-column-gap: 21px;
+          column-gap: 21px;
+}
+
+.videos .container .row .videos__frame .videos__frame__container .videos__frame_item {
+  position: relative;
+  height: 217px;
+}
+
+.videos .container .row .videos__frame .videos__frame__container .videos__frame_item .videos__frame_item_img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  z-index: 7;
+}
+
+.videos .container .row .videos__frame .videos__frame__container .videos__frame_item .videos__frame_item_img:hover {
+  opacity: 1;
+}
+
+.videos .container .row .videos__frame .videos__frame__container .videos__frame_item .videos__frame_item_play {
+  position: absolute;
+  left: 188px;
+  top: 83px;
+  height: 60px;
+  width: 60px;
+  z-index: 8;
 }
 /*# sourceMappingURL=style.css.map */
