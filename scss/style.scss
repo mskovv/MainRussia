@@ -5,7 +5,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	cursor: url("../img/cursor/cursor.png"), default;
 	width: 100%;
-
+	
 }
 
 a,
@@ -62,6 +62,8 @@ select.bloggers__sorting_selector {
 
 
 // !-----Страница блогеров------------------------------//
+
+
 //!--ШАПКА------------------------------------------------------------
 header {
 	background: rgb(110, 16, 94);
@@ -78,7 +80,7 @@ header {
 		.row {
 			height: 50%;
 			display: flex;
-			justify-content: space-between;
+			justify-content: space-around;
 			
 			@media (max-width:1340px) {
 				padding: 0 20px;
@@ -95,15 +97,28 @@ header {
 				}
 			}
 
+
+			nav{
+				display: flex;
+				align-items: center;
 			.nav__list {
 
 				.nav__list_li ul {
 					display: flex;
+					align-items: center;
 
 
 
 					li {
-						margin: 46.25px 30px;
+						margin: 0 30px;
+
+						@media (max-width:1100px) {
+							margin: 0 20px;
+						}
+
+						@media (max-width:900px) {
+							margin: 0 15px;
+						}
 
 						&:hover {
 							transform: scale(1.2);
@@ -116,14 +131,27 @@ header {
 							@media (max-width:1300px) {
 								font-size: 18px;
 							}
+
+							@media (max-width:900px) {
+								font-size: 16px;
+							}
 						}
 					}
 				}
 			}
+		}
 
 			.selector-language {
 				display: flex;
 				align-items: center;
+
+				@media (max-width:1300px) {
+					padding-left: 140px;
+				}
+
+				@media (max-width:1000px) {
+					padding-left: 60px;
+				}
 
 				.selector-language__row {
 					&:hover {
@@ -133,6 +161,14 @@ header {
 					a {
 						font-size: 20px;
 						font-weight: 500;
+
+						@media (max-width:1300px) {
+							font-size: 18px;
+						}
+
+						@media (max-width:900px) {
+							font-size: 16px;
+						}
 					}
 				}
 			}
@@ -202,6 +238,7 @@ header {
 .bloggers {
 	flex: 1 1 auto;
 	margin-top: 10px;
+	
 
 	.container {
 		.row {
@@ -261,23 +298,21 @@ header {
 				grid-template-columns: repeat(4, 1fr);
 				column-gap: 20px;
 				row-gap: 50px;
-				margin: 47px -10px 0 -10px;
+				margin: 47px 0 0 ;
 				padding: 0 10px 0 10px;
 
 				@media (max-width:1300px) {
 					grid-template-columns: repeat(3, 1fr);
-					padding: 0 30px 0 30px;
+					padding: 0 20px 0 20px;
+					column-gap: 30px;
 				}
 
 				@media (max-width:1025px) {
 					grid-template-columns: repeat(2, 1fr);
-
+					column-gap: 40px;
 				}
 
-				// @media (max-width:1025px) {
-				// 	grid-template-columns: repeat(1, 1fr);
-				// 	padding: 0 110px;
-				// }
+				
 
 				.bloggers__frame_window {
 					height: 311px;
@@ -375,6 +410,7 @@ header {
 		justify-content: center;
 		align-items: center;
 
+
 		hr {
 			color: black;
 			width: 100%;
@@ -387,6 +423,14 @@ header {
 			font-size: 15px;
 			font-weight: 300;
 			padding: 0 66px;
+
+			@media (max-width:900px) {
+				padding: 0 46px;
+			}
+
+			@media (max-width:750px) {
+				padding: 0 30px;
+			}
 		}
 
 	}
