@@ -70,6 +70,12 @@ header .container {
   height: 225px;
 }
 
+@media (max-width: 768px) {
+  header .container {
+    height: 100px;
+  }
+}
+
 header .container .row {
   height: 50%;
   display: -webkit-box;
@@ -88,14 +94,25 @@ header .container .row {
 @media (max-width: 1300px) {
   header .container .row {
     padding-left: 20px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  header .container .row {
+    height: 100%;
+    padding: 0;
   }
 }
 
 header .container .row .header__logo .header__logo_img {
   margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  header .container .row .header__logo .header__logo_img img {
+    height: 70px;
+    width: 70px;
+  }
 }
 
 header .container .row nav {
@@ -114,6 +131,12 @@ header .container .row nav .nav__list .nav__list_li ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 768px) {
+  header .container .row nav .nav__list .nav__list_li ul {
+    display: none;
+  }
 }
 
 header .container .row nav .nav__list .nav__list_li ul li {
@@ -154,6 +177,60 @@ header .container .row nav .nav__list .nav__list_li ul li a {
   }
 }
 
+header .container .row nav .nav__list .burger__menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  header .container .row nav .nav__list .burger__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 70px;
+  }
+}
+
+header .container .row nav .nav__list .burger__menu .burger__menu__header .burger__header_container {
+  display: inline-block;
+  cursor: pointer;
+  z-index: 17;
+}
+
+header .container .row nav .nav__list .burger__menu .burger__menu__header .burger__header_container .bar1,
+header .container .row nav .nav__list .burger__menu .burger__menu__header .burger__header_container .bar2,
+header .container .row nav .nav__list .burger__menu .burger__menu__header .burger__header_container .bar3 {
+  width: 30px;
+  height: 3px;
+  background-color: #EFF3F5;
+  margin: 7px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+header .container .row nav .nav__list .burger__menu .burger__menu__header .change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-7px, 5px);
+          transform: rotate(-45deg) translate(-7px, 5px);
+}
+
+header .container .row nav .nav__list .burger__menu .burger__menu__header .change .bar2 {
+  opacity: 0;
+}
+
+header .container .row nav .nav__list .burger__menu .burger__menu__header .change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-9px, -7px);
+          transform: rotate(45deg) translate(-9px, -7px);
+}
+
 header .container .row .selector-language {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -172,6 +249,12 @@ header .container .row .selector-language {
 @media (max-width: 1000px) {
   header .container .row .selector-language {
     padding-left: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  header .container .row .selector-language {
+    padding-left: 22px;
   }
 }
 
@@ -199,11 +282,21 @@ header .container .row .selector-language .selector-language__row a {
 
 header .container .row__links {
   height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
 }
 
 @media (max-width: 1300px) {
   header .container .row__links {
     padding-left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  header .container .row__links {
+    padding-left: 0;
   }
 }
 
@@ -248,6 +341,37 @@ header .container .row__links .links__list .links__list_li ul li a {
   font-size: 14px;
   font-weight: 300;
   line-height: 22px;
+}
+
+header .container .row__links .drop_links {
+  display: none;
+}
+
+header .container .row__links .burger__menu__list {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background-color: #6E105E;
+  top: -30px;
+  left: 0;
+  z-index: 15;
+  padding-left: 35px;
+  padding: 50px;
+  text-align: center;
+  height: 204px;
+  overflow: scroll;
+}
+
+header .container .row__links .burger__menu__list ul li {
+  padding: 5px 0;
+}
+
+header .container .row__links .burger__menu__list ul li a {
+  font-size: 16px;
+}
+
+header .container .row__links .brgr_activ {
+  display: block;
 }
 
 .bloggers {
